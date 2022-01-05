@@ -1,0 +1,37 @@
+Display the array
+8  9  7  3  5  4  7  6  1  
+Number: 8
+Sum is: 8
+Total sum is: 8
+
+Number: 9
+Sum is: 17
+Total sum is: 25
+
+Number: 7
+Sum is: 24
+Total sum is: 49
+
+Number: 3
+Sum is: 3
+Total sum is: 52
+
+Number: 5
+Sum is: 8
+Total sum is: 60
+
+Number: 4
+Sum is: 12
+Total sum is: 72
+
+Number: 7
+Sum is: 7
+Total sum is: 79
+
+Number: 6
+Sum is: 13
+Total sum is: 92
+
+Number: 1
+Sum is: 14
+Total sum is: 106
