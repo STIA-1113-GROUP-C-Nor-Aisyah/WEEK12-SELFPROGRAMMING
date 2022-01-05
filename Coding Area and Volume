@@ -1,0 +1,43 @@
+package myMethod;
+
+import java.util.Scanner;
+
+public class Area {
+	
+	public static void main(String[] args) 
+	   {
+	      Scanner sc = new Scanner(System.in);  
+	      
+	      System.out.println("Please enter radius : ");
+	      double radius = sc.nextDouble();
+	      //area of circle 
+	      double area = calculateAreaCircle(radius);  
+	      System.out.println("Area of circle : " + area);
+	      System.out.println("\nPlease enter the height: ");
+	      double height = sc.nextDouble();
+	      //area of cylinder
+	      double areaCylinder = calculateAreaCylinder(radius, height);
+	      System.out.println("\nArea of cylinder: " + areaCylinder);
+	      //volume of sphere
+	      double volume = calculateVolumeSphere(radius);
+	      System.out.println("\nVolume of sphere: " + volume);
+	      //volume of cylinder
+	      double volumeCylinder = calculateVolumeCylinder(radius, height);
+	      System.out.println("\nVolume of sphere: " + volumeCylinder);
+	   }
+	   static double calculateAreaCircle(double r){
+	      return (22 * r * r) / 7; //area circle formula
+	   }
+	   
+	   static double calculateAreaCylinder(double r, double h) {
+		   return (22 * 2 * r)*(h + r) / 7; //area cylinder formula
+	   }
+	   
+	   static double calculateVolumeSphere(double r) {
+		   return ((4 * 22 * r * r * r) / 3) / 7; //volume sphere formula
+	   }
+	   
+	   static double calculateVolumeCylinder(double r, double h) {
+		   return (2 * 22 * r * h) / 7; //volume of cylinder formula 
+	   }
+}
